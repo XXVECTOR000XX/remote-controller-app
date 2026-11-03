@@ -3,7 +3,7 @@ const WebSocket = require('ws');
 const path = require('path');
 const fs = require('fs');
 const { spawn, exec } = require('child_process');
-const { uIOhook } = require('uiohook-napi');
+const { insertText } = require('@xitanggg/node-insert-text');
 const robot = require('robotjs');
 const os = require('os');
 
@@ -126,7 +126,7 @@ function manejarInput(data) {
                 console.log(data.targetId, ' ', id_socket);
                 if (data.targetId != id_socket) return;
                 
-                uIOhook.keyTap(keyMap[data.input]);
+                insertText(data.input);
                 
                 break;
             case 'mouse_click':
