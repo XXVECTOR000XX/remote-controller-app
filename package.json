@@ -41,20 +41,20 @@
       "**/*.exe"
     ],
     "extraResources": [
-    {
-      "from": ".env",
-      "to": ".env"
-    }
-  ]
+      {
+        "from": ".env",
+        "to": ".env"
+      }
+    ]
   },
   "dependencies": {
+    "@xitanggg/node-insert-text": "^1.5.1",
     "dotenv": "^18.0.9",
     "express": "^5.2.1",
     "http": "^0.0.1-security",
     "path": "^0.12.7",
     "robotjs": "^0.9.1",
     "screenshot-desktop": "^1.15.4",
-    "uiohook-napi": "^1.5.5",
     "ws": "^8.21.0"
   }
 }

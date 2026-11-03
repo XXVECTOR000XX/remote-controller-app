@@ -8,7 +8,6 @@ const robot = require('robotjs');
 const os = require('os');
 
 var screenshot = require('screenshot-desktop');
-const keyMap = require('./Keymap');
 
 require('dotenv').config({
   path: app.isPackaged
