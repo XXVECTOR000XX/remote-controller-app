@@ -10,7 +10,11 @@ const os = require('os');
 var screenshot = require('screenshot-desktop');
 const keyMap = require('./Keymap');
 
-require('dotenv').config();
+require('dotenv').config({
+  path: app.isPackaged
+    ? path.join(process.resourcesPath, '.env')
+    : path.join(__dirname, '.env'),
+});
 
 const INTERVAL_MILLISECONS_SCREENSHOT = 5000; // cada segundo envia foto a worker
 const INTERVAL_RECONECTION = 5000; // cada 5 segundos reconecta
