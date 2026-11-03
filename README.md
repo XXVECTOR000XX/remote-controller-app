@@ -19,3 +19,14 @@ Esto generara un archivo instalador nsis en la carpeta
 Despues de esto, podra ejecutar la app desde el menu, y la podra detener o monitorear en el administrador de tareas.
 
 ![alt text](start-menu.png)
+
+Para editar el nombre de la persona es necesario cambiarlo en el .env antes de compilar, o si ya esta instalado con el instalador de nsis, se debe cambiar el arhcivo:
+
+```cmd
+%localappdata%\Programs\Remote\resources\.env
+```
+colocando el el nombre de preferencia.
+
+```json
+NAME_USER="Cualquier nombre"
+```
