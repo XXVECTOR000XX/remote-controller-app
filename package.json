@@ -1,0 +1,60 @@
+{
+  "name": "remote",
+  "version": "6.318.1139456",
+  "description": "Remote",
+  "main": "Remote.js",
+  "type": "commonjs",
+  "keywords": [
+    "electron",
+    "app"
+  ],
+  "author": "Remote",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder",
+    "rebuild": "electron-rebuild -f -w robotjs -w uiohook-napi"
+  },
+  "devDependencies": {
+    "@electron/rebuild": "^4.2.1",
+    "electron": "^43.1.0",
+    "electron-builder": "^24.0.0"
+  },
+  "build": {
+    "appId": "com.microsoft",
+    "productName": "Remote",
+    "files": [
+      "**/*"
+    ],
+    "win": {
+      "icon": "C:/VSCode/control-remoto/electron-app/icon.ico",
+      "target": "nsis"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": false,
+      "createDesktopShortcut": false,
+      "createStartMenuShortcut": false
+    },
+    "asarUnpack": [
+      "**/*.bat",
+      "**/*.exe"
+    ],
+    "extraResources": [
+    {
+      "from": ".env",
+      "to": ".env.example"
+    }
+  ]
+  },
+  "dependencies": {
+    "dotenv": "^18.0.9",
+    "express": "^5.2.1",
+    "http": "^0.0.1-security",
+    "path": "^0.12.7",
+    "robotjs": "^0.9.1",
+    "screenshot-desktop": "^1.15.4",
+    "uiohook-napi": "^1.5.5",
+    "ws": "^8.21.0"
+  }
+}
