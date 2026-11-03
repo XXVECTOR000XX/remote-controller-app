@@ -20,7 +20,7 @@ Despues de esto, podra ejecutar la app desde el menu, y la podra detener o monit
 
 ![alt text](start-menu.png)
 
-Para editar el nombre de la persona es necesario cambiarlo en el .env antes de compilar, o si ya esta instalado con el instalador de nsis, se debe cambiar el arhcivo:
+Para editar el nombre de la persona es necesario cambiarlo en el .env antes de compilar, o si ya esta instalado con el instalador de nsis, se debe cambiar el archivo:
 
 ```cmd
 %localappdata%\Programs\Remote\resources\.env
