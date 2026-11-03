@@ -17,3 +17,5 @@ Esto generara un archivo instalador nsis en la carpeta
 ~~~
 
 Despues de esto, podra ejecutar la app desde el menu, y la podra detener o monitorear en el administrador de tareas.
+
+![alt text](start-menu.png)
