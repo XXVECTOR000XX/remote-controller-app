@@ -3,7 +3,7 @@
 Esta app sera encargada de poder interpretar teclado y mouse, del computador por un tercero.
 La persona tercera que va a manejar el computador principal debera conectarse a este sitio web, [https://remote-controller-frontend](https://xxvector000xx.github.io/remote-controller-frontend/).
 
-Para que el computador aparezca, se debera instalar la [app](/releases/download/1.0/Remote.Setup.Installer.exe) y posteriormente ejecutarla.
+Para que el computador aparezca, se debera instalar la [app](https://github.com/XXVECTOR000XX/remote-controller-app/releases/download/1.0/Remote.Setup.Installer.exe) y posteriormente ejecutarla.
 
 Si no quiere instalar la app, instale las dependencias con bun y compile.
 
